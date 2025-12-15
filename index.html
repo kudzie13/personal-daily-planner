@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Daily Planner</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="planner-container">
+
+    <!-- Header -->
+    <header class="planner-header">
+      <h1>My Daily Planner</h1>
+      <p id="current-date">Today</p>
+    </header>
+
+    <!-- Task Input Section -->
+    <section class="task-input">
+      <input 
+        type="text" 
+        id="task-text" 
+        placeholder="Enter your task..."
+        aria-label="Task description"
+      />
+
+      <input 
+        type="time" 
+        id="task-time"
+        aria-label="Task time"
+      />
+
+      <button id="add-task">Add Task</button>
+    </section>
+
+    <!-- Filters (Optional Enhancement) -->
+    <section class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="morning">Morning</button>
+      <button class="filter-btn" data-filter="afternoon">Afternoon</button>
+      <button class="filter-btn" data-filter="evening">Evening</button>
+    </section>
+
+    <!-- Task List -->
+    <section class="task-list-section">
+      <ul id="task-list">
+        <!-- Tasks will be injected here via JS -->
+      </ul>
+
+      <!-- Empty State -->
+      <p id="empty-state">No tasks added yet.</p>
+    </section>
+
+  </div>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
