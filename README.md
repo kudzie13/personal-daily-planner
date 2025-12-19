@@ -17,4 +17,4 @@ A responsive daily planner web app that helps users organize tasks with time slo
 - LocalStorage API
 
 ## Live Demo
-👉 https://YOUR_USERNAME.github.io/personal-daily-planner/
+👉 https://kudzie13.github.io/personal-daily-planner/
